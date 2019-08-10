@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-eBquiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nicolas Oliveira Rosendo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --main-bg-color: #473f50;
+        --main-txt-color: #fff;
+      }
+
+      * {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #4a3266; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #516395,
+          #614385
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #516395,
+          #614385
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 16px;
+      }
+
+      h1.title {
+        font-size: 32px;
+      }
+
+      h2.subtitle {
+        display: inline-block;
+        padding: 8px;
+        text-transform: capitalize;
+        font-size: 18px;
+        color: var(--main-txt-color);
+      }
+
+      .box-primary {
+        background: var(--main-bg-color);
+        display: inline-block;
+        padding: 8px;
+        text-transform: uppercase;
+        color: var(--main-txt-color);
+      }
+
+      .header-container {
+        display: flex;
+      }
+
+      .contact-container {
+        display: inline-block;
+        font-size: 18px;
+        color: var(--main-txt-color);
+      }
+
+      .basic-info-container {
+        width: 60%;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .profile-picture-container {
+        background: var(--main-bg-color);
+        padding: 8px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        display: inline-block;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+      .profile-picture-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        display: block;
+      }
+
+      .external-link {
+        text-decoration: none;
+        color: var(--main-txt-color);
+      }
+
+      .developer-timeline-container {
+        display: block;
+        margin: 16px 0;
+      }
+
+      .skills-container {
+        display: block;
+        margin: 16px 0;
+      }
+
+      .projects-container {
+        display: block;
+        margin: 16px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-container">
+      <section class="basic-info-container">
+        <div class="profile-picture-container">
+          <img
+            src="https://avatars.slack-edge.com/2019-01-07/517815527425_907104d104bd8aabd78f_192.jpg"
+            alt=""
+          />
+        </div>
+        <h1 class="title box-primary">Nicolas Oliveira Rosendo</h1>
+        <h2 class="subtitle">
+          Fullstack developer
+        </h2>
+      </section>
+
+      <section class="contact-container">
+        <div>
+          <span class="box-primary"
+            ><i>
+              <!-- location logo -->
+            </i></span
+          >
+          <span> Sao Paulo, Brazil</span>
+        </div>
+        <div>
+          <span class="box-primary"
+            ><i>
+              <!-- cellphone logo -->
+            </i></span
+          >
+          <span> +55 11987384952</span>
+        </div>
+        <div>
+          <span class="box-primary">
+            <i>
+              <!-- email logo -->
+            </i>
+          </span>
+          <span> nicolasrosendo.dev@gmail.com</span>
+        </div>
+        <div>
+          <span class="box-primary">
+            <i>
+              <!-- github logo -->
+            </i>
+          </span>
+          <a
+            class="external-link"
+            href="https://github.com/nickrosendo"
+            target="_blank"
+            >github.com/nickrosendo</a
+          >
+        </div>
+      </section>
+    </header>
+
+    <article class="introduction-container box-primary">
+      <p>
+        Experience mostly in Javascript FrontEnd & BackEnd with NodeJs.<br />
+        Able to deliver every step of the development pipeline, from creating
+        reusable components/interfaces in VueJs or React to deploy applications
+        in a Docker container powered by a kubernetes cluster or even make an
+        restfull or GraphQl api serving mongodb data.
+      </p>
+    </article>
+
+    <article class="developer-timeline-container box-primary">
+      My developer timeline
+    </article>
+
+    <article class="skills-container box-primary">
+      My skills
+    </article>
+
+    <article class="projects-container box-primary">
+      My projects
+    </article>
+  </body>
+</html>
