@@ -9,187 +9,148 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --main-bg-color: #aa076b;
-        --main-txt-color: #fff;
-        --main-gradient-color: #aa076b;
-        --minor-gradient-color: #61045f;
-      }
+    <link rel="stylesheet" href="./style.css" />
 
-      * {
-        font-family: "Roboto", sans-serif;
-        margin: 0;
-        padding: 0;
-      }
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript" src="skills.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+      var options = {
+        strings: ["Fullstack Developer"],
+        loop: true,
+        typeSpeed: 100,
+        showCursor: false
+      };
 
-      body {
-        background: var(--main-bg-color); /* fallback for old browsers */
-        background: -webkit-linear-gradient(
-          to right,
-          ,
-          #614385
-        ); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(
-          to right,
-          var(--main-gradient-color),
-          var(--minor-gradient-color)
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        padding: 16px;
-      }
-
-      h1.title {
-        font-size: 32px;
-      }
-
-      h2.subtitle {
-        display: inline-block;
-        padding: 8px;
-        text-transform: capitalize;
-        font-size: 18px;
-        color: var(--main-txt-color);
-      }
-
-      .box-primary {
-        background: var(--main-bg-color);
-        display: inline-block;
-        padding: 8px;
-        text-transform: uppercase;
-        color: var(--main-txt-color);
-      }
-
-      .header-container {
-        display: flex;
-      }
-
-      .contact-container {
-        display: inline-block;
-        font-size: 18px;
-        color: var(--main-txt-color);
-      }
-
-      .basic-info-container {
-        width: 60%;
-        margin-right: 16px;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .profile-picture-container {
-        background: var(--main-bg-color);
-        padding: 8px;
-        width: 80px;
-        height: 80px;
-        border-radius: 100%;
-        display: inline-block;
-        overflow: hidden;
-        margin: 0 auto;
-      }
-
-      .profile-picture-container img {
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        display: block;
-      }
-
-      .external-link {
-        text-decoration: none;
-        color: var(--main-txt-color);
-      }
-
-      .developer-timeline-container {
-        display: block;
-        margin: 16px 0;
-      }
-
-      .skills-container {
-        display: block;
-        margin: 16px 0;
-      }
-
-      .projects-container {
-        display: block;
-        margin: 16px 0;
-      }
-    </style>
+      window.onload = function() {
+        var typed = new Typed("#typed-subtitle", options);
+      };
+    </script>
   </head>
   <body>
     <header class="header-container">
-      <section class="basic-info-container">
+      <section class="basic-info-container box-primary">
         <div class="profile-picture-container">
           <img
             src="https://avatars.slack-edge.com/2019-01-07/517815527425_907104d104bd8aabd78f_192.jpg"
             alt=""
           />
         </div>
-        <h1 class="title box-primary">Nicolas Oliveira Rosendo</h1>
-        <h2 class="subtitle">
-          Fullstack developer
-        </h2>
-      </section>
+        <h1 class="title">Nicolas Oliveira Rosendo</h1>
+        <h2 class="subtitle" id="typed-subtitle"></h2>
 
-      <section class="contact-container">
-        <div>
-          <span class="box-primary"
-            ><i>
-              <!-- location logo -->
-            </i></span
-          >
-          <span> Sao Paulo, Brazil</span>
-        </div>
-        <div>
-          <span class="box-primary"
-            ><i>
-              <!-- cellphone logo -->
-            </i></span
-          >
-          <span> +55 11987384952</span>
-        </div>
-        <div>
-          <span class="box-primary">
-            <i>
-              <!-- email logo -->
-            </i>
-          </span>
-          <span> nicolasrosendo.dev@gmail.com</span>
-        </div>
-        <div>
-          <span class="box-primary">
-            <i>
-              <!-- github logo -->
-            </i>
-          </span>
-          <a
-            class="external-link"
-            href="https://github.com/nickrosendo"
-            target="_blank"
-            >github.com/nickrosendo</a
-          >
-        </div>
+        <section class="contact-container">
+          <div>
+            <span class="box-primary">
+              <svg
+                style="width:24px;height:24px; fill: var(--main-txt-color);"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                />
+              </svg>
+              <span> Sao Paulo, Brazil</span>
+            </span>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <div>
+              <span class="box-primary">
+                <svg
+                  style="width:24px;height:24px; fill: var(--main-txt-color);"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17.25,18H6.75V4H17.25M14,21H10V20H14M16,1H8A3,3 0 0,0 5,4V20A3,3 0 0,0 8,23H16A3,3 0 0,0 19,20V4A3,3 0 0,0 16,1Z"
+                  />
+                </svg>
+                <span> +55 11987384952</span>
+              </span>
+            </div>
+            <div>
+              <span class="box-primary">
+                <svg
+                  style="width:24px;height:24px; fill: var(--main-txt-color);"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
+                  />
+                </svg>
+                <span> nicolasrosendo.dev@gmail.com</span>
+              </span>
+            </div>
+            <div>
+              <span class="box-primary">
+                <svg
+                  style="width:24px;height:24px; fill: var(--main-txt-color);"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+                  />
+                </svg>
+                <a
+                  class="external-link"
+                  href="https://github.com/nickrosendo"
+                  target="_blank"
+                  >github.com/nickrosendo</a
+                >
+              </span>
+            </div>
+          </div>
+        </section>
       </section>
     </header>
 
     <article class="introduction-container box-primary">
+      <h2 class="subtitle">
+        Overview
+      </h2>
       <p>
         Experience mostly in Javascript FrontEnd & BackEnd with NodeJs.<br />
-        Able to deliver every step of the development pipeline, from creating
-        reusable components/interfaces in VueJs or React to deploy applications
-        in a Docker container powered by a kubernetes cluster or even make an
+        Able to deliver every step of the development pipeline, from creating<br />
+        reusable components/interfaces in Vue or React to deploy applications<br />
+        in a Docker container powered by a kubernetes cluster or even make an<br />
         restfull or GraphQl api serving mongodb data.
       </p>
     </article>
 
-    <article class="developer-timeline-container box-primary">
-      My developer timeline
-    </article>
-
     <article class="skills-container box-primary">
-      My skills
+      <h2 class="subtitle">
+        My skills
+      </h2>
+      <div class="charts-items-container">
+        <div class="skills-chart-item">
+          <h3 class="subtitle">
+            FrontEnd
+          </h3>
+          <div id="front_end_chart"></div>
+        </div>
+        <div class="skills-chart-item mx-1">
+          <h3 class="subtitle">
+            BackEnd
+          </h3>
+          <div id="back_end_chart"></div>
+        </div>
+        <div class="skills-chart-item">
+          <h3 class="subtitle">
+            infrastructure
+          </h3>
+          <div id="infrastructure_chart"></div>
+        </div>
+      </div>
+
+      <div id="skills_chart"></div>
     </article>
 
     <article class="projects-container box-primary">
-      My projects
+      <h2 class="subtitle">
+        My projects
+      </h2>
     </article>
   </body>
 </html>

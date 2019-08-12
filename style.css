@@ -1,0 +1,133 @@
+:root {
+  --main-bg-color: #6d4f61;
+  --secodary-bg-color: #4b3743;
+  --main-txt-color: #fff;
+  --main-gradient-color: #6d4f61;
+  --minor-gradient-color: #8a7389;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--main-bg-color); /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    var(--main-gradient-color),
+    var(--minor-gradient-color)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 16px;
+}
+
+h1.title {
+  font-size: 32px;
+}
+
+.subtitle {
+  display: inline-block;
+  padding: 8px;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: var(--main-txt-color);
+}
+
+#typed-subtitle {
+  height: 21px;
+}
+
+.box-primary {
+  background: var(--secodary-bg-color);
+  display: inline-block;
+  padding: 8px;
+  color: var(--main-txt-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+  color: var(--main-txt-color);
+}
+
+.basic-info-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-picture-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-picture-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: block;
+}
+
+.external-link {
+  text-decoration: none;
+  color: var(--main-txt-color);
+}
+
+.skills-container {
+  display: block;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.projects-container {
+  display: block;
+  margin: 16px 0;
+}
+
+.contact-container .box-primary {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container .box-primary span,
+.contact-container .box-primary a {
+  margin-left: 8px;
+}
+
+.introduction-container {
+  text-align: center;
+  width: calc(100% - 16px);
+  font-size: 18px;
+}
+
+.charts-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-chart-item {
+  width: 33%;
+  border: 1px solid #fff;
+}
+
+.mx-1 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
