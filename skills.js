@@ -4,9 +4,6 @@
     packages: ["corechart"]
   });
 
-  // Set a callback to run when the Google Visualization API is loaded.
-  google.charts.setOnLoadCallback(drawChart);
-
   // draw front-end chart
   google.charts.setOnLoadCallback(drawFrontEndChart);
 
@@ -15,6 +12,9 @@
 
   // draw infrastructure chart
   google.charts.setOnLoadCallback(drawInfrastructureChart);
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawGeneralChart);
 
   // Callback that creates and populates a data table,
   // instantiates the pie chart, passes in the data and
@@ -39,7 +39,7 @@
           color: "#fff"
         }
       },
-      width: container.offsetWidth,
+      width: container.offsetWidth - 4,
       height: 250
     };
 
@@ -118,21 +118,13 @@
     chart.draw(data, options);
   }
 
-  function drawChart() {
+  function drawGeneralChart() {
     // Create the data table.
     var data = new google.visualization.DataTable();
-    var skillsChartContainer = document.getElementById("skills_chart");
+    var container = document.getElementById("general_chart");
     data.addColumn("string", "Tecnologies");
     data.addColumn("number", "Slices");
-    data.addRows([
-      ["Vue", 3],
-      ["React", 2],
-      ["Node", 3],
-      ["Docker", 1],
-      ["Kubernetes", 1],
-      ["Mongodb", 1],
-      ["Es+", 6]
-    ]);
+    data.addRows([["FrontEnd", 6], ["BackEnd", 3], ["Infrastructure", 1]]);
 
     // Set chart options
     var options = {
@@ -145,12 +137,12 @@
           color: "#fff"
         }
       },
-      width: skillsChartContainer.offsetWidth - 16,
+      width: container.offsetWidth - 4,
       height: 500
     };
 
     // Instantiate and draw our chart, passing in some options.
-    var chart = new google.visualization.PieChart(skillsChartContainer);
+    var chart = new google.visualization.PieChart(container);
     chart.draw(data, options);
   }
 })();

@@ -1,0 +1,30 @@
+{
+  "name": "alexandria",
+  "version": "1.0.0",
+  "description": "Developer portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nickrosendo/cv.git"
+  },
+  "keywords": [
+    "fullstack",
+    "frontend",
+    "backend",
+    "infra",
+    "developer"
+  ],
+  "author": "Nicolas Rosendo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nickrosendo/cv/issues"
+  },
+  "homepage": "https://github.com/Nickrosendo/cv#readme",
+  "dependencies": {
+    "@material/card": "^3.1.0",
+    "@material/grid-list": "^3.1.0"
+  }
+}
