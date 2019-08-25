@@ -110,10 +110,6 @@ h1.title {
   text-align: center;
 }
 
-.my-card__media {
-  background-image: url("https://github.com/Nickrosendo/Weather/blob/master/cities-in-portugal-porto.jpg?raw=true");
-}
-
 .contact-container .box-primary {
   display: flex;
   align-items: center;
@@ -153,4 +149,67 @@ h1.title {
 .mx-1 {
   margin-left: 8px;
   margin-right: 8px;
+}
+
+/* profile */
+.profile-card-title {
+  background: var(--secodary-bg-color);
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.my-card__media {
+  background-image: url("https://github.com/Nickrosendo/Weather/blob/master/cities-in-portugal-porto.jpg?raw=true");
+  background-size: contain !important;
+}
+
+.my-card__media.billy-client {
+  background-image: url("/images/billy-client.png");
+}
+
+.my-card__media.billy-admin {
+  background-image: url("/images/billy-admin.png");
+}
+
+.my-card__media.billy-server {
+  background-image: url("/images/billy-server.png");
+}
+
+.my-card__media.randch-client {
+  background-image: url("/images/randch-client.png");
+}
+
+.my-card__media.randch-server {
+  background-image: url("/images/randch-server.png");
+}
+
+.my-card__media.space-invaders-js {
+  background-image: url("/images/space-invaders-js.png");
+}
+
+.my-card__media.ifaltas {
+  background-image: url("/images/ifaltas.png");
+}
+
+.my-card__media.friends-night {
+  background-image: url("/images/friends-night.png");
+}
+
+.my-card__media.api-friends-night {
+  background-image: url("/images/api-friends-night.png");
+}
+
+.my-card__media.vue-game {
+  background-image: url("/images/vue-game.png");
+}
+
+.my-card__media.solar-system {
+  background-image: url("/images/solar-system.png");
+}
+
+/* overides */
+
+.mdc-card__media-content {
+  padding-top: 16px;
 }
