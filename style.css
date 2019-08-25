@@ -26,6 +26,18 @@ body {
     var(--minor-gradient-color)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#defaultCanvas0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 h1.title {
@@ -49,14 +61,19 @@ h1.title {
   background: var(--secodary-bg-color);
   display: inline-block;
   padding: 8px;
+  border-radius: 8px;
   color: var(--main-txt-color);
+  position: relative;
+  z-index: 1;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-container {
@@ -69,7 +86,7 @@ h1.title {
 }
 
 .basic-info-container {
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -102,12 +119,15 @@ h1.title {
   margin: 16px 0;
   padding: 16px;
   text-align: center;
+  width: 70%;
 }
 
 .projects-container {
   display: block;
   margin: 16px 0;
+  padding: 16px;
   text-align: center;
+  width: 70%;
 }
 
 .contact-container .box-primary {
@@ -122,7 +142,8 @@ h1.title {
 
 .introduction-container {
   text-align: center;
-  width: calc(100% - 16px);
+  width: 70%;
+  padding: 16px;
   font-size: 18px;
 }
 
